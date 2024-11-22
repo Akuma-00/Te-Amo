@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffffdd;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header h1 {
+    color: #e63946;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.content p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.highlight {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.heart-button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.heart-button:hover {
+    transform: scale(1.1);
+    background-color: #ff6b6b;
+}
+
+.hidden {
+    display: none;
+}
+
+#loveMessage {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: #333;
+    animation: slideDown 0.7s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
